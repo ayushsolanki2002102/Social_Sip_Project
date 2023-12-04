@@ -1,0 +1,153 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    height: 200vh;
+    background: url('../background1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333; /* Adjusted color for better visibility */
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #confirmationMessage {
+    margin-top: 20px;
+    color: #4caf50;
+    font-size: 18px;
+  }
+  
+  #suggestedPlaces {
+    margin-top: 50px;
+  }
+  
+  .placeCard1 {
+    background: url('../../images/banner2.jpg') center/cover no-repeat;
+    
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    border: 2px solid white;
+    border-radius: 10px; 
+  }
+
+  .placeCard2 {
+    background: url('../../images/about.jpg') center/cover no-repeat;
+
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px; 
+  }
+
+  .placeCard3 {
+    background: url('../../images/background3.jpg') center/cover no-repeat;
+
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px; 
+  }
+  
+
+  
+  
+  .placeCard img {
+    
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .placeCard1 h3 {
+    color: black;
+    
+    font: 4rem;
+
+  }
+  
+  .placeCard p {
+    color: #555;
+  }
+  
+  
+  
