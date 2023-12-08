@@ -1,4 +1,8 @@
 import react, { Fragment } from "react";
+import "../pages/about.css";
+import sf from "../assets/images/streetfood.jpg";
+import caf from "../assets/images/cafeee.jpg";
+import lc from "../assets/images/libcafe.jpg";
 function Ab()
 {
     return(
@@ -8,7 +12,7 @@ function Ab()
     </header>
     
     
-    <section id="about" class="container">
+    <section id="about" className="container1">
         <div id="about-text">
             
             <p>
@@ -62,14 +66,14 @@ function Ab()
 
         </div>
         <div id="image-gallery">
-            <div class="image-item">
-                <img src="assets/images/streetfood.jpg" alt="Cafe Image 1"/>
+            <div className="image-item">
+                <img src={sf}/>
             </div>
-            <div class="image-item">
-                <img src="assets/images/cafeee.jpg" alt="Cafe Image 2"/>
+            <div className="image-item">
+                <img src={caf}/>
             </div>
-            <div class="image-item">
-                <img src="assets/images/libcafe.jpg" alt="Cafe Image 3"/>
+            <div className="image-item">
+                <img src={lc}/>
             </div>
 
            
@@ -77,7 +81,7 @@ function Ab()
         
     </section>
 
-    <script src="script.js"></script>
+
         </Fragment>
     )
 }

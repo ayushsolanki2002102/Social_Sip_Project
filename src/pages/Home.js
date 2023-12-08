@@ -1,29 +1,41 @@
 import react, { Fragment } from "react";
+import "./Style.css";
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logonew.PNG";
+import ic from "../assets/images/indiancusine.jpg";
+import ny from "../assets/images/newyotkcu.jpg";
+import cf from "../assets/images/chinesefood.jpg";
+import bg1 from "../assets/images/background1.jpg";
+import bg2 from "../assets/images/background2.jpg";
+import hf from "../assets/images/healthyfood.jpg";
+import user1 from "../assets/images/user1.jpg";
+import user2 from "../assets/images/user2.jpg";
+
+
 function Home()
 {
     return(
         <Fragment>
-    <div className="header" >
+            
+
+
+        <div className="header">
         <nav>
-            <a href="index.html"><img src="assets/images/logonew.PNG" /></a>
+            <a href="index.html"><img src={logo}/></a>
             <div className="nav-links" id="navlinks">
                 <i className="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    
-                    <Link to="/" className="li">HOME</Link>
-                    <Link to="/Ab" className="li">ABOUT</Link>
-                    <Link to="/Cont" className="li">CONTACT</Link>
-
+                <Link to="/" className="li">HOME</Link>
+                <Link to="/Ab" className="li">ABOUT</Link>
+                <Link to="/RateUsFormm" className="li">FEEDBACK</Link>
                 </ul>
 
             </div>
             <i className="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-
         <div className="text-box">
             <h1><span>S</span>ocial <span>S</span>ip</h1>
-            <p> Lets talk about food </p>  <p> all the day!!</p>
+            <p> Lets talk about food</p> <p> all the day!!</p>
 
             <Link to="/Boo" className="hero-btn">Book your table right now!!</Link>
 
@@ -37,21 +49,21 @@ function Home()
    
     <div className="row">
         <div className="join-col">
-            <h3>Restaurant Reviews</h3>
-            <p>
+            <h3 className="cb">Restaurant Reviews</h3>
+            <p className="cb">
                 Detailed reviews of local restaurants, including information about their ambiance, menu, pricing, and must-try dishes. Include high-quality photos of the food and the restaurant's interior.
             </p>
         </div>
         <div className="join-col">
-            <h3>Food Events and Festivals</h3>
-            <p>
+            <h3 className="cb">Food Events and Festivals</h3>
+            <p className="cb">
                 Upcoming food-related events, festivals, and food truck gatherings in your area. Include dates, locations, and what to expect!!.
             </p>
 
         </div>
         <div className="join-col">
-            <h3>Hidden Gems</h3>
-            <p>
+            <h3 className="cb">Hidden Gems</h3>
+            <p className="cb">
                 Underated cafes, food spots in your city or town. These could be small family-owned restaurants or food trucks.
             </p>
 
@@ -63,27 +75,27 @@ function Home()
 </div>
 <div className="about">
     <h1>Taste Is Priority</h1>
-    <p className="pp">We embark on a mouthwatering journey through the culinary delights of your local food scene. We explore the art of flavor, showcasing the most delectable dishes and the stories behind the chefs and eateries that create them.</p>
+    <p>We embark on a mouthwatering journey through the culinary delights of your local food scene. We explore the art of flavor, showcasing the most delectable dishes and the stories behind the chefs and eateries that create them.</p>
 
     <div className="row">
             <div className="about-col">
-                <img src="assets/images/indiancusine.jpg"/>
+                <img src={ic}/>
                 <div className="layer">
-                    <h3 className="hh">India</h3>
+                    <h3>India</h3>
                 </div>
             </div>
 
             <div className="about-col">
-                <img src="assets/images/newyotkcu.jpg"/>
+                <img src={ny}/>
                 <div className="layer">
-                    <h3 className="hh">New York</h3>
+                    <h3>New York</h3>
                 </div>
             </div>
             
             <div className="about-col">
-                <img src="assets/images/chinesefood.jpg"/>
+                <img src={cf}/>
                 <div className="layer">
-                    <h3 className="hh">Chinese</h3>
+                    <h3>Chinese</h3>
                 </div>
             </div>
 
@@ -106,7 +118,7 @@ function Home()
 
     <div className="row">
         <div className="facilities-col">
-            <img src="assets/images/background2.jpg" alt=""/>
+            <img src={bg2}/>
             <h3>Street Food Guide</h3>
             <p>
                 
@@ -116,7 +128,7 @@ function Home()
         </div>
 
         <div className="facilities-col">
-            <img src="assets/images/background1.jpg" alt=""/>
+            <img src={bg1}/>
             <h3>Cuisine Guides</h3>
             <p>
                 
@@ -126,7 +138,7 @@ function Home()
         </div>
 
         <div className="facilities-col">
-            <img src="assets/images/healthyfood.jpg" alt=""/>
+            <img src={hf}/>
             <h3>Healthy Eating Guides</h3>
             <p>
                 
@@ -149,13 +161,13 @@ function Home()
 
     <div className="row">
         <div className="testimonials-col">
-            <img src="assets/images/user1.jpg"/>
+            <img src={user1}/>
             <div>
-                <p>
+                <p className="cb">
 
                     I stumbled upon Social Sip recently, and it's been a game-changer in how I explore and experience food in my city. The site is a treasure trove of culinary gems, offering everything from restaurant reviews to mouthwatering recipes and the latest food trends. The in-depth restaurant profiles and dish recommendations have become my go-to source when I'm looking for the perfect dining spot.
                 </p>
-                <h3>
+                <h3 className="cb">
                     Guatam Pandey
                 </h3>
                 <i className="fa fa-star"></i>
@@ -169,13 +181,13 @@ function Home()
         </div>
 
         <div className="testimonials-col">
-            <img src="assets/images/user2.jpg"/>
+            <img src={user2}/>
             <div>
-                <p>
+                <p className="cb">
 
                     I've discovered hidden foodie havens and experienced flavors I never knew existed, thanks to Social Sip. If you're a fellow food enthusiast, this is the ultimate foodie haven that will elevate your culinary adventures. It's the website that leaves you hungry for more, in the best way possible!"
                 </p>
-                <h3>
+                <h3 className="cb">
                     Juhi Yadav
                 </h3>
                 <i className="fa fa-star"></i>
@@ -195,17 +207,15 @@ function Home()
 
 
 </div>
-
-
-
 <div className="cta">
-    <h1>Enroll For Our Help</h1>
+    <h1>Let Us Know Your Experience!!</h1>
+    <Link to="/RateUsFormm" className="hero-btn">FEEDBACK</Link>
 
 
-    <Link to="/Cont" className="hero-btn">Book your table right now!!</Link>
+
 
 </div>
-
+    
 
         </Fragment>
     )
