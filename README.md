@@ -3,7 +3,7 @@
 Welcome to Social Sip,  your ultimate guide to culinary adventures! We're passionate food explorers dedicated to helping you discover the finest dining experiences near you. Our mission is to connect you with the best places to savor mouthwatering dishes and explore the diverse world of cuisine.
 
 ## Features 
--Search and Filter
++Search and Filter
 -User Reviews and Ratings
 -Upcoming Food Events,  Festivals, Blogs.
 -Location-Based Services
